@@ -710,4 +710,11 @@ button {
     background-color: #f4f4f4;
     max-width: 100%;
   }
+
+  .header .auth-buttons button {
+    padding: 5px 15px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+  }
 }
