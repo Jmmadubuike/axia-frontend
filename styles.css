@@ -1,0 +1,713 @@
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*Heading Styles */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.header .logo img {
+  width: 150px;
+  height: auto;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header .auth-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header .auth-buttons button {
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.header .auth-buttons .login {
+  background-color: transparent;
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+.header .auth-buttons .register {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  background-color: #f4f4f4;
+  max-width: 100%;
+}
+
+.content-section .text-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.content-section .text-content h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: start;
+}
+
+.hero {
+  color: green;
+}
+
+.content-section .text-content p {
+  font-size: 12px;
+  color: #666;
+  margin-top: -25px;
+}
+
+.content-section .text-content .register {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content-section .image-content {
+  text-align: center;
+}
+
+.content-section .image-content img {
+  width: 100%;
+  height: auto;
+  padding-right: 40px;
+  max-width: 400px;
+}
+
+/* Section 2 */
+.content-section1 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.card {
+  text-align: center;
+  margin: 20px;
+  width: calc(33.333% - 40px);
+  background-color: #f4f4f4;
+  font-size: 10px;
+}
+
+.child {
+  text-align: center;
+  padding: 0 80px;
+}
+
+.learn {
+  padding: 0 20px;
+}
+
+.learn h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card .child h3 {
+  font-size: 2rem;
+  color: #252525;
+  margin: 0;
+}
+
+.card .icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.image-text img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.text-content {
+  width: calc(50% - 40px);
+  text-align: left;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .top-row,
+  .bottom-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .text-content,
+  .image-text {
+    width: 100%; /* Full width for smaller screens */
+    margin: 5px 0;
+  }
+
+  .text-content {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  background-color: #f4f4f4;
+  max-width: 100%;
+}
+
+.left-sections {
+  width: 45%;
+}
+
+.left-sections h2 {
+  font-size: 2rem;
+}
+
+.right-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 45%;
+}
+
+.items {
+  display: flex;
+  align-items: center; /* Aligns the items vertically */
+}
+
+.icons {
+  margin-right: 10px; /* Adds some space between the icon and the text */
+}
+
+.icons img {
+  height: 30px; /* Adjust the icon size as needed */
+}
+
+.text-contents h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.text-contents p {
+  margin: 0;
+}
+
+/* General container to hold both text and images */
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: calc(100% - 40px); /* Adjusting for padding */
+}
+
+/* First div styling */
+.text-block {
+  text-align: center;
+  max-width: 500px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+/* Container for the images */
+.image-container {
+  width: 100%;
+  max-width: 1200px; /* Optional max-width */
+  margin-bottom: 60px;
+}
+
+/* Image blocks will be displayed horizontally */
+.image-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+/* Each image item */
+.image-item {
+  position: relative;
+  width: 100%;
+  max-width: 350px; /* Cap the width */
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay text on the image */
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  color: #333;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  height: 120px;
+  margin-bottom: -60px; /* Adjust or remove */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.image-overlay a::after {
+  content: " →"; /* Add arrow before the text */
+  margin-right: 5px; /* Space between the arrow and text */
+}
+
+/* "Read more" link styling */
+.image-overlay a {
+  color: green;
+  text-decoration: none;
+}
+
+.text-down {
+  text-align: center;
+  max-width: 800px;
+  font-size: 1.2rem;
+  margin: 20px;
+  padding: 20px;
+}
+
+.text-down h2 {
+  font-size: 4rem;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.text-down a {
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  margin: 20px;
+}
+
+.text-down a::after {
+  content: " →"; /* Add arrow before the text */
+  margin-right: 5px; /* Space between the arrow and text */
+}
+
+/* Customer Section Styles */
+.customer-section {
+  display: flex; /* Use flexbox for layout */
+  padding: 40px; /* Add some padding */
+  background-color: #f9f9f9; /* Background color */
+}
+
+.customer-info {
+  flex: 2; /* Allow this div to take up more space */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center align vertically */
+  padding-left: 20px; /* Space between image and text */
+  padding: 0 20px;
+}
+
+.customer-info p {
+  margin: 5px 0; /* Add margin for paragraphs */
+  font-size: 1.2rem;
+}
+
+.customer-info h2 {
+  margin: 10px 0; /* Add margin for heading */
+  color: green;
+  font-size: 1.5rem;
+}
+
+.icon-container img {
+  width: 30px;
+  height: auto;
+}
+
+/* Icon Container */
+.icon-container {
+  display: flex; /* Use flexbox for icons */
+  justify-content: flex-start; /* Align icons to the left */
+  gap: 55px; /* Space between icons */
+  margin: 15px 0; /* Margin around the icon container */
+}
+
+/* "Read more" link styling */
+.icon-container a {
+  color: green;
+  text-decoration: none;
+}
+
+.icon-container a::after {
+  content: " →"; /* Add arrow before the text */
+  margin-right: 5px; /* Space between the arrow and text */
+}
+
+/* Meet Customers Link */
+.meet-customers {
+  text-decoration: none; /* Remove underline */
+  color: green; /* Link color */
+  font-weight: bold; /* Make text bold */
+  display: flex; /* Flex to align arrow and text */
+  align-items: center; /* Center vertically */
+  margin-top: 15px; /* Add margin above the link */
+}
+
+.arrow {
+  margin-right: 5px; /* Space between arrow and text */
+}
+
+/* Ensure icons and link are aligned on the same line */
+.customer-info .icon-container,
+.customer-info .meet-customers {
+  display: flex; /* Make both flex containers */
+  align-items: center; /* Align items vertically */
+}
+
+.customer-image {
+  width: 300px; /* Set desired width */
+  height: 300px; /* Set desired height */
+  overflow: hidden; /* Hide the overflow */
+  position: relative; /* Position relative for absolute positioning of the image */
+}
+
+.customer-image img {
+  position: absolute; /* Position image absolutely */
+  top: 50%; /* Center the image vertically */
+  left: 50%; /* Center the image horizontally */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  min-width: 100%; /* Ensures the image covers the entire div */
+  min-height: 100%; /* Ensures the image covers the entire div */
+  transform: translate(-50%, -50%); /* Move the image to center it */
+}
+
+/* Footer Styles */
+.footer {
+  display: flex; /* Display footer as a flex container */
+  justify-content: space-between; /* Space between footer items */
+  padding: 50px;
+  background-color: #263238;
+
+  color: white; /* Text color */
+  border-top: 1px solid #ccc; /* Optional top border */
+}
+
+/* Footer Logo Section */
+.footer-logo {
+  display: flex;
+  flex-direction: column; /* Stack logo, copyright text, and social icons vertically */
+  align-items: flex-start; /* Center the logo and text */
+  justify-content: space-between; /* Space between items */
+  height: 150px; /* Set a fixed height for the logo section */
+  text-align: center; /* Center-align the content */
+  width: 45%;
+}
+
+.social-icons img {
+  width: 15px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 150px; /* Adjust logo size as needed */
+}
+
+/* Copyright Text */
+.footer-logo p {
+  margin: 10px 0; /* Add margin around copyright text */
+  font-size: 0.8rem; /* Adjust font size if necessary */
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center the social icons */
+  gap: 10px; /* Space between social icons */
+}
+
+/* Footer Content Section */
+.footer-content {
+  display: flex; /* Display footer content as flex container */
+  flex: 2; /* Allow the content section to take more space */
+  justify-content: space-around; /* Space between sections */
+}
+
+/* Footer Links */
+.footer-links,
+.footer-support {
+  flex: 1; /* Allow sections to grow equally */
+}
+
+.footer-links ul,
+.footer-support ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.footer-links a,
+.footer-support a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+}
+
+.footer-links a:hover,
+.footer-support a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Subscription Form */
+.footer-subscribe {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  color: white;
+}
+
+.input-container {
+  position: relative; /* Position relative for absolute positioning of icon */
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.input-container input {
+  flex: 1; /* Input takes available space */
+  padding: 10px; /* Space for the input */
+  border: 1px solid #ccc; /* Border for input box */
+  border-radius: 4px; /* Rounded corners */
+  background-color: rgb(56, 55, 55);
+  color: white;
+}
+
+/* Telegram Icon */
+.telegram-icon {
+  position: absolute; /* Position icon inside input */
+  right: 10px; /* Space from the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust vertical centering */
+}
+
+.telegram-icon img {
+  width: 20px; /* Adjust icon size */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media Query for Header */
+@media (max-width: 768px) {
+  .header nav {
+    display: none; /* Hide the nav by default */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header nav.active {
+    display: flex; /* Show the nav when active */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+}
+
+/* Media Query for Container and Other Sections */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .text-down h2 {
+    font-size: 2rem;
+  }
+
+  .left-sections,
+  .right-sections {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .right-sections {
+    display: grid;
+    grid-template-columns: 1fr; /* One column for stats */
+  }
+
+  .items {
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 15px; /* Space between items */
+  }
+
+  .text-block,
+  .text-down {
+    max-width: 100%; /* Full width */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .image-item {
+    max-width: 100%; /* Full width for images */
+    margin-bottom: 20px; /* Space between images */
+  }
+
+  /* Media Query for Customer Section */
+  .customer-section {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .customer-image {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Add space between image and info */
+    text-align: center; /* Center the image */
+    display: block; /* Ensure it is displayed as a block */
+  }
+
+  .customer-image img {
+    max-width: 100%; /* Ensures the image scales down */
+    height: auto; /* Maintains aspect ratio */
+  }
+
+  .customer-info {
+    padding-left: 0; /* Remove left padding */
+    padding: 0; /* Remove additional padding */
+  }
+
+  .customer-info h2 {
+    font-size: 1.3rem; /* Adjust heading size */
+  }
+
+  .customer-info p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow icons to wrap */
+    justify-content: center; /* Center the icons */
+    margin-top: 10px; /* Add space above icons */
+  }
+
+  .icon-container img {
+    margin: 5px; /* Add margin between icons */
+    width: 40px; /* Set a consistent width for icons */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .icon-container a {
+    margin-top: 10px; /* Space above the link */
+    text-align: center; /* Center the link */
+    display: block; /* Make it block-level */
+  }
+
+  /* Footer Styles */
+  .footer {
+    flex-direction: column; /* Stack footer items vertically */
+    align-items: center; /* Center footer items */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center align text */
+    flex-direction: column;
+  }
+
+  .footer-links,
+  .footer-support,
+  .footer-subscribe {
+    margin-bottom: 20px; /* Space between footer sections */
+  }
+
+  .content-section .text-content h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: start;
+  }
+
+  .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    max-width: 100%;
+  }
+}
